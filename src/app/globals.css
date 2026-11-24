@@ -1,26 +1,87 @@
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F7F5EF;
+  --foreground: #4B5149;
+
+  --forest: #344D3D;
+  --primary: #526B50;
+  --sage: #71876A;
+  --light-green: #DCE6D9;
+  --cream: #F7F5EF;
+  --white: #FFFFFF;
+  --text-secondary: #655D54;
+  --taupe: #806B5B;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-forest: var(--forest);
+  --color-primary: var(--primary);
+  --color-sage: var(--sage);
+  --color-light-green: var(--light-green);
+  --color-cream: var(--cream);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
+  min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--light-green);
+  color: var(--forest);
+}
+
+/* Barra de desplazamiento del modal de servicios */
+.service-modal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #71876A #F7F5EF;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+.service-modal-scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+.service-modal-scroll::-webkit-scrollbar-track {
+  background: #F7F5EF;
+  border-radius: 20px;
+}
+
+.service-modal-scroll::-webkit-scrollbar-thumb {
+  background: #71876A;
+  border-radius: 20px;
+}
+
+.service-modal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #344D3D;
 }
