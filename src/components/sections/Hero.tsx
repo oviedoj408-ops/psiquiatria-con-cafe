@@ -31,20 +31,25 @@ export default function Hero() {
             </p>
 
             <h1 className="font-serif text-4xl font-bold leading-[1.15] text-[#344D3D] md:text-6xl">
-              Tu salud mental también merece un espacio.
+              Dra. Ruth Yubelka Aguilar Ramírez
             </h1>
 
+            <h2 className="text-xl font-semibold text-[#526B50] md:text-2xl">
+              Médico especialista en Psiquiatría
+            </h2>
+
             <p className="max-w-xl text-lg leading-8 text-[#655D54]">
-              Un espacio de escucha, orientación y acompañamiento
-              profesional para cuidar de tu bienestar emocional.
+              Tu salud mental también merece un espacio. Un lugar de escucha,
+              orientación y acompañamiento profesional para cuidar de tu
+              bienestar emocional.
             </p>
           </div>
 
           {/* Datos profesionales */}
           <div className="border-l-4 border-[#71876A] py-2 pl-5">
-            <h2 className="text-2xl font-bold leading-snug text-[#344D3D]">
+            <p className="text-lg font-bold leading-snug text-[#344D3D]">
               {siteData.doctor.name}
-            </h2>
+            </p>
 
             <p className="mt-2 font-medium text-[#526B50]">
               {siteData.doctor.specialty}
@@ -73,7 +78,8 @@ export default function Hero() {
           </div>
 
           <p className="text-xs leading-relaxed text-[#806B5B]">
-            Atención exclusivamente por videollamada.
+            Atención psiquiátrica exclusivamente virtual en Nicaragua,
+            mediante videollamada.
           </p>
         </div>
 
@@ -89,7 +95,7 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-[2.5rem] border-[7px] border-white bg-[#DCE6D9] shadow-2xl">
               <Image
                 src={siteData.doctor.photo}
-                alt={siteData.doctor.name}
+                alt={`Dra. Ruth Yubelka Aguilar Ramírez, psiquiatra en Nicaragua`}
                 width={600}
                 height={750}
                 priority
