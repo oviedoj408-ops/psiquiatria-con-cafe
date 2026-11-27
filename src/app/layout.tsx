@@ -17,22 +17,24 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://psiquiatriaconcafe.com"),
 
   title: {
-    default: "Psiquiatría con Café | Dra. Ruth Yubelka Aguilar Ramírez",
-    template: "%s | Psiquiatría con Café",
+    default: "Dra. Ruth Aguilar | Psiquiatra en Nicaragua",
+    template: "%s | Dra. Ruth Aguilar",
   },
 
   description:
-    "Conoce los servicios de la Dra. Ruth Yubelka Aguilar Ramírez, médico especialista en Psiquiatría y alta especialidad en Psiquiatría de Enlace. Atención exclusivamente virtual.",
+    "Dra. Ruth Yubelka Aguilar Ramírez, médico especialista en Psiquiatría y alta especialidad en Psiquiatría de Enlace. Consultas exclusivamente virtuales en Nicaragua.",
 
   applicationName: "Psiquiatría con Café",
 
   keywords: [
-    "Psiquiatría",
-    "Psiquiatría de Enlace",
-    "Salud mental",
-    "Consulta psiquiátrica virtual",
-    "Atención psiquiátrica en línea",
+    "Dra. Ruth Aguilar",
+    "Dra. Ruth Yubelka Aguilar",
     "Dra. Ruth Yubelka Aguilar Ramírez",
+    "Psiquiatra en Nicaragua",
+    "Consulta psiquiátrica virtual",
+    "Psiquiatría de Enlace",
+    "Atención psiquiátrica en línea",
+    "Psiquiatría con Café",
   ],
 
   authors: [
@@ -41,18 +43,34 @@ export const metadata: Metadata = {
     },
   ],
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
-    title: "Psiquiatría con Café",
+    title: "Dra. Ruth Aguilar | Psiquiatra en Nicaragua",
     description:
-      "Un espacio dedicado a la salud mental, la escucha y el bienestar emocional. Atención exclusivamente virtual.",
+      "Conoce a la Dra. Ruth Yubelka Aguilar Ramírez, especialista en Psiquiatría y Psiquiatría de Enlace. Atención exclusivamente virtual en Nicaragua.",
     siteName: "Psiquiatría con Café",
     locale: "es_NI",
     type: "website",
+    url: "https://psiquiatriaconcafe.com",
+  },
+
+  twitter: {
+    card: "summary",
+    title: "Dra. Ruth Aguilar | Psiquiatra en Nicaragua",
+    description:
+      "Dra. Ruth Yubelka Aguilar Ramírez, especialista en Psiquiatría. Atención exclusivamente virtual en Nicaragua.",
   },
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 

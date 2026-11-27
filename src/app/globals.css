@@ -60,28 +60,3 @@ a {
   color: var(--forest);
 }
 
-/* Barra de desplazamiento del modal de servicios */
-.service-modal-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: #71876A #F7F5EF;
-  scrollbar-gutter: stable;
-  scroll-behavior: smooth;
-}
-
-.service-modal-scroll::-webkit-scrollbar {
-  width: 7px;
-}
-
-.service-modal-scroll::-webkit-scrollbar-track {
-  background: #F7F5EF;
-  border-radius: 20px;
-}
-
-.service-modal-scroll::-webkit-scrollbar-thumb {
-  background: #71876A;
-  border-radius: 20px;
-}
-
-.service-modal-scroll::-webkit-scrollbar-thumb:hover {
-  background: #344D3D;
-}
