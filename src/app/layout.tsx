@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://psiquiatriaconcafe.com"),
+  metadataBase: new URL("https://psiquiatria-con-cafe.pages.dev"),
 
   title: {
     default: "Dra. Ruth Aguilar | Psiquiatra en Nicaragua",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "Psiquiatría con Café",
     locale: "es_NI",
     type: "website",
-    url: "https://psiquiatriaconcafe.com",
+    url: "https://psiquiatria-con-cafe.pages.dev",
   },
 
   twitter: {
